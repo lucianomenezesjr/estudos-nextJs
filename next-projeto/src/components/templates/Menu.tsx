@@ -6,11 +6,11 @@ import {
     IconHome2,
     IconLayout2,
     IconListDetails,
+    IconNotification,
     IconUserHexagon,
 } from '@tabler/icons-react';
 import MenuItem from './MenuItem';
 import { usePathname } from 'next/navigation';
-
 
 export default function Menu() {
 
@@ -29,6 +29,7 @@ export default function Menu() {
                     ativo={pathname === '/cliente-servidor'}
                 />
                 <MenuItem texto="Administração" href="/admin" icone={IconUserHexagon} ativo={pathname === '/admin'}/>
+                <MenuItem texto="Alertas" href="/alertas" icone={IconNotification} ativo={pathname === '/alertas'}/>
             </nav>
         </aside>
     )
